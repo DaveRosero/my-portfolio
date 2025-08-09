@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\File;
 
 
-Route::get('/portfolio', function () {
+Route::get('/', function () {
     $path = public_path('txt/about.txt');
     $contents = file_get_contents($path);
     // return view('welcome');
